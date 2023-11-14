@@ -1,3 +1,4 @@
+--- # MySQL
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -5,3 +6,23 @@ spring:
     username: root
     password: dnseo4904!
 
+--- # Server
+server:
+  port: 8080
+
+--- # Thymeleaf
+spring:
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates # classpath:/templates
+    suffix: .html
+
+--- #
+jpa:
+  hibernate:
+    ddl-auto: update
+  show-sql: true
+  properties:
+    hibernate:
+      format_sql: true
+  database: mysql
