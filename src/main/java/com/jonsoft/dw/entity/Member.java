@@ -1,10 +1,15 @@
 package com.jonsoft.dw.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+
+@Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Member {
 
     @Id
